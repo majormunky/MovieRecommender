@@ -16,26 +16,12 @@
 
     <!-- Favicons -->
     <meta name="theme-color" content="#563d7c">
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    {% block page_styles %}{% endblock %}
+    {% block page_styles %}{% endblock %}     
 </head>
 <body class="{% block body_class %}{% endblock %}">
-    {% block content %}{% endblock %}
+    {% block top_nav %}{% endblock %}
+    <main role="main" class="container">
+        {% block content %}{% endblock %}
+    </main>
 </body>
 </html>
