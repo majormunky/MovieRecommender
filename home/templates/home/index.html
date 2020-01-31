@@ -4,7 +4,9 @@
 
 {% block content %}
 <h1>Content</h1>
-<p>Tstal;sdfja;lkdjflk;adsf ;alskdjf;aksd f;lk al;as dflkjasdf;lkj asdf asdfaf asdf asf asf dasdf asdf asdf alsdhf oisahf piaesjhfd ;kajsdfp oijawepof ihjas;odi fjpaosid fjpoais djhfpajsd fijas dofij aposdifj oa;sdjf pasdjf pliasjd fliajsd f;ljas dlfij asdf</p>
+{% for movie in movie_list %}
+<p>{{movie.title}}</p>
+{% endfor %}
 {% endblock %}
 
 {% block page_styles %}
