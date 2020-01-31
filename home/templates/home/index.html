@@ -4,9 +4,19 @@
 
 {% block content %}
 <h1>Content</h1>
-{% for movie in movie_list %}
-<p>{{movie.title}}</p>
-{% endfor %}
+    <table class="table">
+        <tr>
+            <th style="width: 1%">&nbsp;</th>
+            <th>Title</th>
+        </tr>
+    {% for movie in movie_list %}
+        <tr>
+            <td><a href="#">View</a>
+            <td>{{movie.title}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <p><button class="btn btn-secondary" id="add_movie">Add Movie</button></p>
 {% endblock %}
 
 {% block page_styles %}
